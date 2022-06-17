@@ -23,7 +23,7 @@ const helloWorldContract = new ethers.Contract(
 )
 
 async function main() {
-    // Read the last message, whiwh is at this point the first one, that we wrote when we deployed our smart contract
+    // Read the last message, which is at this point the first one, that we wrote when we deployed our smart contract
     const message = await helloWorldContract.message()
     console.log("The message is: " + message)
 
